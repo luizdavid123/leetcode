@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-func TestMaxArea(t *testing.T) {
+func TestIntToRoman(t *testing.T) {
 	tests := map[string]struct {
 		in  int
 		out string
