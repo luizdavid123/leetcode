@@ -1,4 +1,4 @@
-package int2roman
+package problem12
 
 import (
 	"leetcode/misc"

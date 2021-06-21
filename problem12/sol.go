@@ -1,7 +1,7 @@
-package int2roman
+package problem12
 
 /*
-	LeetCode Proble12: Integer to Roman
+	LeetCode Problem 12: Integer to Roman
 	Level: Medium
 	Description: Given an integer, convert it to a roman numeral.
 */
