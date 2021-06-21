@@ -1,4 +1,4 @@
-package maxarea
+package problem11
 
 import (
 	"leetcode/misc"

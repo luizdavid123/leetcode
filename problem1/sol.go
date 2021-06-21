@@ -1,4 +1,11 @@
-package twosum
+package problem1
+
+/*
+	LeetCode Problem 1: Two Sum
+	Level: Easy
+	Description: Given an array of integers nums and an integer target,
+	return indices of the two numbers such that they add up to target.
+*/
 
 // BruteForce return indices of the two numbers such that they add up to target.
 func BruteForce(nums []int, target int) []int {

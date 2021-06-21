@@ -1,4 +1,4 @@
-package paranumber
+package problem9
 
 import (
 	"leetcode/misc"

@@ -1,4 +1,10 @@
-package longestsubstr
+package problem3
+
+/*
+	LeetCode Problem 3: Longest Substring Without Repeating Characters
+	Level: Medium
+	Description: Given a string s, find the length of the longest substring without repeating characters.
+*/
 
 // LongestSubStr find the length of the longest substring without repeating characters
 func LongestSubStr(str string) int {

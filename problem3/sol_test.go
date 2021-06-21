@@ -1,4 +1,4 @@
-package longestsubstr
+package problem3
 
 import (
 	"leetcode/misc"

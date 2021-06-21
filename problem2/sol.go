@@ -1,8 +1,17 @@
-package addtwonum
+package problem2
 
-import ()
-import "strconv"
-import "strings"
+import (
+	"strconv"
+	"strings"
+)
+
+/*
+	LeetCode Problem 2: Add Two Number
+	Level: Medium
+	Description: You are given two non-empty linked lists representing two non-negative integers.
+	The digits are stored in reverse order, and each of their nodes contains a single digit.
+	Add the two numbers and return the sum as a linked list.
+*/
 
 // ListNode represents a Node for Singly-Linked List
 type ListNode struct {

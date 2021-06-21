@@ -1,4 +1,10 @@
-package longestparasubstr
+package problem5
+
+/*
+	LeetCode Problem 5: Longest Palindromic Substring
+	Level: Medium
+	Description: Given a string s, return the longest palindromic substring in s.
+*/
 
 // LongestParaSubStr return the longest palindromic substring
 func LongestParaSubStr(str string) string {

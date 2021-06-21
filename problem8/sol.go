@@ -1,9 +1,16 @@
-package atoi
+package problem8
 
 import (
 	"math"
 	"strings"
 )
+
+/*
+	LeetCode Problem 8: String to Integer (atoi)
+	Level: Medium
+	Description: Implement the myAtoi(string s) function,
+	which converts a string to a 32-bit signed integer (similar to C/C++'s atoi function).
+*/
 
 // Atoi converts a string to a 32-bit signed integer
 func Atoi(str string) int {

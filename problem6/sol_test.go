@@ -1,4 +1,4 @@
-package zigzag
+package problem6
 
 import (
 	"leetcode/misc"

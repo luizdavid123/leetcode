@@ -1,4 +1,4 @@
-package atoi
+package problem8
 
 import (
 	"leetcode/misc"

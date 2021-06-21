@@ -1,6 +1,12 @@
-package zigzag
+package problem6
 
 import "strings"
+
+/*
+	LeetCode Problem 6: ZigZag Conversion
+	Level: Medium
+	Description: Write the code that will take a string and make this conversion given a number of rows.
+*/
 
 // ZigZagAndToRow rewrite the string in a zigzag patten and read it one by one by row
 func ZigZagAndToRow(str string, n int) string {

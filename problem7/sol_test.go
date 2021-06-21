@@ -1,4 +1,4 @@
-package reversenumber
+package problem7
 
 import (
 	"leetcode/misc"

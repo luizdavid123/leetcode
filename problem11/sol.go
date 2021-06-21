@@ -1,7 +1,7 @@
-package maxarea
+package problem11
 
 /*
-	LeetCode Problem 11 Palindrome Number
+	LeetCode Problem 11 Container With Most Water
 	Level: Medium
 	Description: Given n non-negative integers a1, a2, ..., an ,
 	where each represents a point at coordinate (i, ai).
