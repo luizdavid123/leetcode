@@ -19,7 +19,7 @@ func TestThreeSum(t *testing.T) {
 
 	for name, test := range tests {
 		t.Run(name, func(t *testing.T) {
-			actual := ThreeSum(test.in)
+			actual := ThreeSum(test.in, 0)
 			misc.Equals(t, test.out, actual)
 		})
 	}

@@ -5,14 +5,14 @@ import (
 )
 
 /*
-	LeetCode Problem 15: Longest Common Prefix
+	LeetCode Problem 15: 3Sum
 	Level: Medium
 	Description: Given an integer array nums, return all the triplets [nums[i], nums[j], nums[k]]
 	such that i != j, i != k,and j != k, and nums[i] + nums[j] + nums[k] == 0.
 */
 
 // ThreeSum return all return all the triplets [nums[i], nums[j], nums[k]] that sum up to 0
-func ThreeSum(nums []int) [][]int {
+func ThreeSum(nums []int, tar int) [][]int {
 	ans := [][]int{}
 
 	cnt := len(nums)
@@ -24,7 +24,7 @@ func ThreeSum(nums []int) [][]int {
 		for l < r {
 			sum := sorted[i] + sorted[l] + sorted[r]
 			switch {
-			case sum == 0:
+			case sum == tar:
 				triplet := []int{sorted[i], sorted[l], sorted[r]}
 				sort.Ints(triplet)
 				if !IsAnsIncludesTripe(ans, triplet) {
@@ -32,9 +32,9 @@ func ThreeSum(nums []int) [][]int {
 				}
 				l++
 				r--
-			case sum < 0:
+			case sum < tar:
 				l++
-			case sum > 0:
+			case sum > tar:
 				r--
 			}
 		}
