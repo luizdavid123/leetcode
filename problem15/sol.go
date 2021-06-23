@@ -16,16 +16,15 @@ func ThreeSum(nums []int, tar int) [][]int {
 	ans := [][]int{}
 
 	cnt := len(nums)
-	sorted := nums
 	sort.Ints(nums)
 
 	for i := 0; i < cnt-2; i++ {
 		l, r := i+1, cnt-1
 		for l < r {
-			sum := sorted[i] + sorted[l] + sorted[r]
+			sum := nums[i] + nums[l] + nums[r]
 			switch {
 			case sum == tar:
-				triplet := []int{sorted[i], sorted[l], sorted[r]}
+				triplet := []int{nums[i], nums[l], nums[r]}
 				sort.Ints(triplet)
 				if !IsAnsIncludesTripe(ans, triplet) {
 					ans = append(ans, triplet)
