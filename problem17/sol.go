@@ -1,60 +1,65 @@
 package problem17
 
-import "sort"
-
 /*
-	LeetCode Problem 18:  4Sum
+	LeetCode Problem 17:  Letter Combinations of a Phone Number
 	Level: Medium
-	Description: Given an array nums of n integers, return an array of all the unique quadruplets
-	[nums[a], nums[b], nums[c], nums[d]] such that:
-	1. 0 <= a, b, c, d < n
-	2. a, b, c, and d are distinct
-	3. nums[a] + nums[b] + nums[c] + nums[d] == target
+	Description: Given a string containing digits from 2-9 inclusive, return all possible letter
+	combinations that the number could represent. Return the answer in any order.
 */
 
-// FourSum finds all distinct quadruplets in nums that sum up to tager
-func FourSum(nums []int, target int) [][]int {
-	ans := [][]int{}
-	cnt := len(nums)
+// AllPhoneNumToLetterComb return all possible letter combinations that the number could represent
+func AllPhoneNumToLetterComb(digits string) []string {
+	cnt := len(digits)
 
-	sort.Ints(nums)
-
-	for i := 0; i < cnt-3; i++ {
-		for j := i + 1; j < cnt-2; j++ {
-			l, r := j+1, cnt-1
-			for l < r {
-				sum := nums[i] + nums[j] + nums[l] + nums[r]
-				switch {
-				case sum == target:
-					quad := []int{nums[i], nums[j], nums[l], nums[r]}
-					sort.Ints(quad)
-					if !IsAnsIncludesQuad(ans, quad) {
-						ans = append(ans, quad)
-					}
-					l++
-					r--
-				case sum < target:
-					l++
-				case sum > target:
-					r--
-				}
-			}
-		}
+	cands := make([][]string, cnt)
+	for i := 0; i < cnt; i++ {
+		cands[i] = GetLetters(digits[i])
 	}
 
-	return ans
+	accs := []string{}
+	for i := 0; i < len(cands); i++ {
+		if i == 0 {
+			accs = cands[0]
+			continue
+		}
+		accs = Merge(accs, cands[i])
+	}
+	return accs
 }
 
-// IsAnsIncludesQuad check if ans contains ans
-func IsAnsIncludesQuad(ans [][]int, quad []int) bool {
-	for i := 0; i < len(ans); i++ {
-		arr := ans[i]
-		if arr[0] == quad[0] &&
-			arr[1] == quad[1] &&
-			arr[2] == quad[2] &&
-			arr[3] == quad[3] {
-			return true
+// Merge return all combinations of elements in two string slice
+func Merge(l, r []string) []string {
+	comb := []string{}
+
+	for i := 0; i < len(l); i++ {
+		for j := 0; j < len(r); j++ {
+			comb = append(comb, l[i]+r[j])
 		}
 	}
-	return false
+
+	return comb
+}
+
+// GetLetters return corresponding letters with given digit
+func GetLetters(digit byte) []string {
+	switch digit {
+	case '2':
+		return []string{"a", "b", "c"}
+	case '3':
+		return []string{"d", "e", "f"}
+	case '4':
+		return []string{"g", "h", "i"}
+	case '5':
+		return []string{"j", "k", "l"}
+	case '6':
+		return []string{"m", "n", "o"}
+	case '7':
+		return []string{"p", "q", "r", "s"}
+	case '8':
+		return []string{"t", "u", "v"}
+	case '9':
+		return []string{"w", "x", "y", "z"}
+	default:
+		return nil
+	}
 }
