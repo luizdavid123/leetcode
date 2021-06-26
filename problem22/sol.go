@@ -133,9 +133,7 @@ func GenPermStr(permch chan []string, strs []string) {
 		if i%2 == 1 {
 			j = p[i]
 		}
-		tmp := strs[j]
-		strs[j] = strs[i]
-		strs[i] = tmp
+		strs[i], strs[j] = strs[j], strs[i]
 		output := make([]string, len(strs))
 		copy(output, strs)
 		permch <- output

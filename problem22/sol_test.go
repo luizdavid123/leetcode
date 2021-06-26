@@ -10,13 +10,13 @@ func TestGenerateParentheses(t *testing.T) {
 		in  int
 		out []string
 	}{
-		// "case 01": {1, []string{"()"}},
+		"case 01": {1, []string{"()"}},
 		"case 02": {2, []string{"()()", "(())"}},
-		// "case 03": {3, []string{"()()()", "(())()", "(()())", "()(())", "((()))"}},
-		// "case 04": {4, GenerateValidParenthesesV2(4)},
-		// "case 05": {5, GenerateValidParenthesesV2(5)},
-		// "case 06": {6, GenerateValidParenthesesV2(6)},
-		// "case 08": {8, GenerateValidParenthesesV2(8)},
+		"case 03": {3, []string{"()()()", "(())()", "(()())", "()(())", "((()))"}},
+		"case 04": {4, GenerateValidParenthesesV2(4)},
+		"case 05": {5, GenerateValidParenthesesV2(5)},
+		"case 06": {6, GenerateValidParenthesesV2(6)},
+		"case 08": {8, GenerateValidParenthesesV2(8)},
 	}
 
 	for name, test := range tests {
