@@ -3,7 +3,7 @@ package problem22
 import "strings"
 
 /*
-	LeetCode Problem 22: Valid Parentheses
+	LeetCode Problem 22: Generate Parentheses
 	Level: Medium
 	Description: Given n pairs of parentheses,
 	write a function to generate all combinations of well-formed parentheses.
@@ -23,6 +23,34 @@ func GenerateValidParenthesesV2(n int) []string {
 		}
 	}
 	return ans
+}
+
+// GenerateValidParentheses generate all combinations of well-formed parentheses
+func GenerateValidParenthesesV3(n int) []string {
+	ans := []string{}
+	ch := make(chan string)
+	go func(ch chan string) {
+		defer close(ch)
+		BackTrack(ch, "", 0, 0, n)
+	}(ch)
+	for str := range ch {
+		ans = append(ans, str)
+	}
+	return ans
+}
+
+// BackTrack is a helper function to generate parentheses
+func BackTrack(ch chan string, str string, open int, close int, max int) {
+	if len(str) == 2*max {
+		ch <- str
+		return
+	}
+	if close < open {
+		BackTrack(ch, str+")", open, close+1, max)
+	}
+	if open < max {
+		BackTrack(ch, str+"(", open+1, close, max)
+	}
 }
 
 // GenerateValidParentheses generate all combinations of well-formed parentheses
@@ -76,6 +104,7 @@ func GenPairBracket(n int) []string {
 }
 
 // GenAllPermStr wrap GenPermStr with channel
+// Ref: https://github.com/Ramshackle-Jamathon/go-quickPerm
 func GenAllPermStr(strs []string) <-chan []string {
 	permch := make(chan []string)
 	go func(permch chan []string) {
@@ -86,6 +115,7 @@ func GenAllPermStr(strs []string) <-chan []string {
 }
 
 // GenPermStr retrun all permutation of the element in strs
+// Ref: https://github.com/Ramshackle-Jamathon/go-quickPerm
 func GenPermStr(permch chan []string, strs []string) {
 	output := make([]string, len(strs))
 	copy(output, strs)
