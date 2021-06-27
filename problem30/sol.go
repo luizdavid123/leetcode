@@ -25,15 +25,15 @@ func FindSubStr(str string, words []string) []int {
 	strlen, nwords, wordlen := len(str), len(words), len(words[0])
 	for i := 0; i < strlen-nwords*wordlen+1; i++ {
 		sub := str[i : i+nwords*wordlen]
-		if IsConCat(sub, counts, wordlen) {
+		if IsSubConCatOfWord(sub, counts, wordlen) {
 			idx = append(idx, i)
 		}
 	}
 	return idx
 }
 
-// IsConCat check if the sub contains the concat of words
-func IsConCat(sub string, counts map[string]int, wordlen int) bool {
+// IsSubConCatOfWord check if the sub contains the concat of words
+func IsSubConCatOfWord(sub string, counts map[string]int, wordlen int) bool {
 	seen := map[string]int{}
 	for i := 0; i < len(sub); i += wordlen {
 		word := sub[i : i+wordlen]
