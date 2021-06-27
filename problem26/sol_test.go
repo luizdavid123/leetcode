@@ -24,7 +24,17 @@ func TestRmDup(t *testing.T) {
 		t.Run(name, func(t *testing.T) {
 			out, k := RmDup(test.in)
 			misc.Equals(t, test.k, k)
-			misc.Equals(t, test.out, out)
+			misc.Equals(t, true, ValidOut(test.out, out, k))
 		})
 	}
+}
+
+// ValidOut check if output nums is valid
+func ValidOut(expect []int, actual []int, k int) bool {
+	for i := 0; i < k; i++ {
+		if expect[i] != actual[i] {
+			return false
+		}
+	}
+	return true
 }

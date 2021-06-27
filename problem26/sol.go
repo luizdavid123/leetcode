@@ -22,3 +22,18 @@ func RmDup(nums []int) ([]int, int) {
 	}
 	return nums, u + 1
 }
+
+// RmDupV2 remove the duplicates in-place such that each unique element appears only once.
+func RmDupV2(nums []int) ([]int, int) {
+	if len(nums) == 0 {
+		return []int{}, 0
+	}
+	u := 0
+	for i := 1; i < len(nums); i++ {
+		if nums[i] > nums[u] {
+			nums[u+1] = nums[i]
+			u++
+		}
+	}
+	return nums, u + 1
+}
