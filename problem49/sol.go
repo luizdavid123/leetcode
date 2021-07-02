@@ -1,5 +1,10 @@
 package problem49
 
+import (
+	"fmt"
+	"strings"
+)
+
 /*
 	LeetCode Problem 49: Group Anagrams
 	Level: Medium
@@ -27,6 +32,37 @@ func GroupAnagrams(strs []string) [][]string {
 	return ans
 }
 
+// GroupAnagramsV2 group the anagrams together
+func GroupAnagramsV2(strs []string) [][]string {
+	cnt2ans := map[string][]string{}
+
+	for i := 0; i < len(strs); i++ {
+		str := strs[i]
+		cnt := make([]int, 26)
+		for j := 0; j < len(str); j++ {
+			cnt[int(str[j]-'a')]++
+		}
+		var sb strings.Builder
+		for k := 0; k < 26; k++ {
+			sb.WriteString("#")
+			sb.WriteString(fmt.Sprint(cnt[k]))
+		}
+		key := sb.String()
+		_, ok := cnt2ans[key]
+		if !ok {
+			cnt2ans[key] = []string{}
+		}
+		cnt2ans[key] = append(cnt2ans[key], str)
+	}
+
+	ans := [][]string{}
+	for _, v := range cnt2ans {
+		ans = append(ans, v)
+	}
+	return ans
+}
+
+// IndexOf return the index of group that str belongs to or -1 if not found that one
 func IndexOf(group [][]string, str string) int {
 	cnt := len(group)
 	for i := 0; i < cnt; i++ {
