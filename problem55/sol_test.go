@@ -8,7 +8,7 @@ import (
 func TestCanJump(t *testing.T) {
 	tests := map[string]struct {
 		nums []int
-		cha  bool
+		can  bool
 	}{
 		"case 01": {[]int{2, 3, 1, 1, 4}, true},
 		"case 02": {[]int{2, 3, 1, 0, 4}, true},
@@ -22,8 +22,8 @@ func TestCanJump(t *testing.T) {
 
 	for name, test := range tests {
 		t.Run(name, func(t *testing.T) {
-			cha := CanJumpV2(test.nums)
-			misc.Equals(t, test.cha, cha)
+			can := CanJumpV2(test.nums)
+			misc.Equals(t, test.can, can)
 		})
 	}
 }

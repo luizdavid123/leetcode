@@ -43,7 +43,7 @@ func CanJumpRecurNMem(nums []int, dp []DP, pos int) bool {
 }
 
 // CanJumpV2 determine if it is able to reach the last index at the first index of the array
-// CanJumpV2 solve it by Greedy approach
+// CanJumpV2 solve it by greedy
 func CanJumpV2(nums []int) bool {
 	far := nums[0]
 	for i := 1; i < len(nums); i++ {
