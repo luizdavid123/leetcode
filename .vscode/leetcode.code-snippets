@@ -1,0 +1,74 @@
+{
+	// Place your leetcode workspace snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"scope": "javascript,typescript",
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"init leetcode problem": {
+		"prefix": "init",
+		"description": "Snippet for init a leetcode problem",
+		"body": [
+			"/*",
+			"  LeetCode Problem $1: $2",
+			"  Level: $3",
+			"  Description: $4",
+			"*/",
+			"",
+			"// $5",
+			"func $5($6) $7 {}"
+		]
+	},
+	"max": {
+		"prefix": "max",
+		"description": "Snippet for max",
+		"body": [
+			"// Max$1 return the larger one",
+			"func Max$1(a, b $2) $2 {",
+			"  if a > b {",
+			"    return a",
+			"  }",
+			"  return b",
+			"}",
+		]
+	},
+	"min": {
+		"prefix": "min",
+		"description": "Snippet for min",
+		"body": [
+			"// Min$1 return the smaller one",
+			"func Min$1(a, b $2) $2 {",
+			"  if a > b {",
+			"    return b",
+			"  }",
+			"  return a",
+			"}",
+		]
+	},
+	"contain": {
+		"prefix": "cont",
+		"description": "Snippet for contain, check if an element is in an array",
+		"body": [
+			"// Is$1In$2 check if an element is in an array",
+			"func Is$1In$2(eles []$3, ele $3) bool {",
+			"  cnt := len(eles)",
+			"  for i := 0; i < cnt; i++ {",
+			"    if eles[i] == ele {",
+			"      return true",
+			"    }",
+			"  }",
+			"  return false",
+			"}",
+		],
+	}
+}
