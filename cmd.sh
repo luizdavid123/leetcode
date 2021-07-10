@@ -9,10 +9,10 @@ init() {
 }
 
 save() {
-  [ -z $1 ] && usage
-  msg=$1
+  [ -z "$1" ] && usage
+  msg="$1"
   git add . &&
-  git commit -m $msg &&
+  git commit -m "$msg" &&
   git push origin master
 }
 
@@ -30,7 +30,7 @@ case $cmd in
     init $2
     ;;
   save)
-    save $2
+    save "$2"
     ;;
   help | *)
     usage
