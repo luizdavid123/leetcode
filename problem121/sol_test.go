@@ -17,7 +17,7 @@ func TestMaxProfit(t *testing.T) {
 
 	for name, test := range tests {
 		t.Run(name, func(t *testing.T) {
-			max := MaxProfitV2(test.prices)
+			max := MaxProfitV3(test.prices)
 			misc.Equals(t, test.max, max)
 		})
 	}

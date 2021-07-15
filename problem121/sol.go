@@ -37,6 +37,16 @@ func MaxProfitV2(prices []int) int {
 	return ans
 }
 
+// MaxProfitV3 return the maximum profit you can achieve from this transaction
+func MaxProfitV3(prices []int) int {
+	sell, buy := 0, math.MinInt64
+	for _, price := range prices {
+		buy = MaxInt(buy, -price)
+		sell = MaxInt(sell, buy+price)
+	}
+	return sell
+}
+
 // MaxInt return the larger one
 func MaxInt(a, b int) int {
 	if a > b {
