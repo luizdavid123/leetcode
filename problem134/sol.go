@@ -16,8 +16,7 @@ func CanCompleteCircuit(gas []int, cost []int) int {
 	if gases < costs {
 		return -1
 	}
-	ans := 0
-	net := 0
+	net, ans := 0, 0
 	for i := 0; i < len(gas); i++ {
 		net += gas[i] - cost[i]
 		if net < 0 {
