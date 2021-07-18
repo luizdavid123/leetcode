@@ -13,11 +13,9 @@ import "strings"
 // an integer colnum
 func ConvertToTitle(col int) string {
 	ans := ""
-	d := col
-	for d > 0 {
+	for d := col; d > 0; d = d / 26 {
 		d--
 		ans += GetTitleChar(d % 26)
-		d /= 26
 	}
 	return RvsStr(ans)
 }
