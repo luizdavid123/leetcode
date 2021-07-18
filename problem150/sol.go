@@ -16,9 +16,11 @@ import (
 	Link: https://leetcode.com/problems/evaluate-reverse-polish-notation/
 */
 
+type OpFunc func(string, string) string
+
 // EvalRPN evalute the value of an arithmetic expression in Reverse Polish Notation
 func EvalRPN(tokens []string) int {
-	ops := map[string]func(string, string) string{
+	ops := map[string]OpFunc{
 		"+": Add,
 		"-": Minu,
 		"*": Mutiply,
