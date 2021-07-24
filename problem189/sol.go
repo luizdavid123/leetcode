@@ -16,3 +16,21 @@ func Rotate(nums []int, k int) []int {
 	}
 	return ans
 }
+
+// RotateV2 rotate the array to the right by k steps
+func RotateV2(nums []int, k int) []int {
+	k %= len(nums)
+	Reverse(nums, 0, len(nums)-1)
+	Reverse(nums, 0, k-1)
+	Reverse(nums, k, len(nums)-1)
+	return nums
+}
+
+// Reverse reverse nums from start to end
+func Reverse(nums []int, start int, end int) {
+	for start < end {
+		nums[start], nums[end] = nums[end], nums[start]
+		start++
+		end--
+	}
+}
