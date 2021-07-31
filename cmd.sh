@@ -1,11 +1,11 @@
 #!/bin/sh
 
 init() {
-  [ -z $1 ] && usage
-  no=$1
-  mkdir -p "problem${no}" && 
-  echo "package problem${no}" > "problem${no}/sol.go" && 
-  echo "package problem${no}" > "problem${no}/sol_test.go"
+  [ -z "$1" ] && usage
+  title="$1"
+  mkdir -p "${title}" && 
+  echo "package sol" > "${title}/sol.go" &&
+  echo "package sol" > "${title}/sol_test.go"
 }
 
 save() {
