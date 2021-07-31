@@ -11,8 +11,8 @@ func TestHasDup(t *testing.T) {
 		is   bool
 	}{
 		"case 01": {[]int{1, 2, 3, 1}, true},
-		"case 02": {[]int{1, 2, 3, 4}, true},
-		"case 03": {[]int{1, 1, 1, 3, 3, 4, 3, 2, 4, 2}, false},
+		"case 02": {[]int{1, 2, 3, 4}, false},
+		"case 03": {[]int{1, 1, 1, 3, 3, 4, 3, 2, 4, 2}, true},
 	}
 
 	for name, test := range tests {

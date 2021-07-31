@@ -9,6 +9,12 @@ package sol
 
 // HasDup check if any values in arr appears >= 2 time
 func HasDup(nums []int) bool {
-	ans := false
-	return ans
+	seen := map[int]int{}
+	for i := 0; i < len(nums); i++ {
+		if seen[nums[i]] >= 1 {
+			return true
+		}
+		seen[nums[i]] += 1
+	}
+	return false
 }
