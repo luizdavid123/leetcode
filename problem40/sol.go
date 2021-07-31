@@ -1,4 +1,4 @@
-package problem40
+package sol
 
 import "sort"
 

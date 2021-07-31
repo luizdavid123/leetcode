@@ -1,4 +1,4 @@
-package problem131
+package sol
 
 /*
 	LeetCode Problem 131: Palindrome Partitioning

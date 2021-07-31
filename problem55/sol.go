@@ -1,4 +1,4 @@
-package problem55
+package sol
 
 /*
 	LeetCode Problem 55: Jump Game

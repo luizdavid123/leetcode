@@ -1,4 +1,4 @@
-package problem139
+package sol
 
 /*
 	LeetCode Problem 139: Word Break

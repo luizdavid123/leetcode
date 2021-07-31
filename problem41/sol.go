@@ -1,4 +1,4 @@
-package problem41
+package sol
 
 /*
 	LeetCode Problem 41: First Missing Positive

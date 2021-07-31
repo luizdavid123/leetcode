@@ -1,4 +1,4 @@
-package problem11
+package sol
 
 /*
 	LeetCode Problem 11 Container With Most Water

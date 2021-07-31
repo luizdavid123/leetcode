@@ -1,4 +1,4 @@
-package problem72
+package sol
 
 /*
 	LeetCode Problem 72: Edit Distance

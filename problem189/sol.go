@@ -1,4 +1,4 @@
-package problem189
+package sol
 
 /*
 	LeetCode Problem 189: Rotate Array

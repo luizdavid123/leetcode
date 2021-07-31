@@ -1,4 +1,4 @@
-package problem27
+package sol
 
 /*
 	LeetCode Problem 26: Remove Element

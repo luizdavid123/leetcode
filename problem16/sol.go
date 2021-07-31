@@ -1,4 +1,4 @@
-package problem16
+package sol
 
 import (
 	"math"

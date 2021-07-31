@@ -1,4 +1,4 @@
-package problem5
+package sol
 
 /*
 	LeetCode Problem 5: Longest Palindromic Substring

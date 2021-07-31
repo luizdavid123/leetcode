@@ -1,4 +1,4 @@
-package problem119
+package sol
 
 /*
 	LeetCode Problem 119: Pascal's Triangle II

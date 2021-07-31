@@ -1,4 +1,4 @@
-package problem91
+package sol
 
 /*
 	LeetCode Problem 91: Decode Ways

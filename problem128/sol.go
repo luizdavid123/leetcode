@@ -1,4 +1,4 @@
-package problem128
+package sol
 
 /*
 	LeetCode Problem 128: Longest Consecutive Sequence

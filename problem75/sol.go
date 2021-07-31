@@ -1,4 +1,4 @@
-package problem75
+package sol
 
 /*
 	LeetCode Problem 75: Sort Colors

@@ -1,4 +1,4 @@
-package problem78
+package sol
 
 /*
 	LeetCode Problem 78: Subsets

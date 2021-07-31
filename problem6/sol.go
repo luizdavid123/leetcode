@@ -1,4 +1,4 @@
-package problem6
+package sol
 
 import "strings"
 

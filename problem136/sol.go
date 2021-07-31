@@ -1,4 +1,4 @@
-package problem136
+package sol
 
 /*
 	LeetCode Problem 136: Single Number

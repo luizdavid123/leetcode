@@ -1,4 +1,4 @@
-package problem1
+package sol
 
 /*
 	LeetCode Problem 1: Two Sum

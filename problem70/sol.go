@@ -1,4 +1,4 @@
-package problem70
+package sol
 
 /*
 	LeetCode Problem 125: Climbing Stairs

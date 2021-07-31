@@ -1,4 +1,4 @@
-package problem202
+package sol
 
 /*
 	LeetCode Problem 202: Happy Number

@@ -1,4 +1,4 @@
-package problem213
+package sol
 
 /*
 	LeetCode Problem 213: House Robber II

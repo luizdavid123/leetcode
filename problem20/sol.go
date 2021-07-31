@@ -1,4 +1,4 @@
-package problem20
+package sol
 
 /*
 	LeetCode Problem 20: Valid Parentheses

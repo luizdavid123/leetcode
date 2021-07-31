@@ -1,4 +1,4 @@
-package problem3
+package sol
 
 /*
 	LeetCode Problem 3: Longest Substring Without Repeating Characters

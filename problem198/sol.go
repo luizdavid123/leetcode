@@ -1,4 +1,4 @@
-package problem198
+package sol
 
 /*
 	LeetCode Problem 198: House Robber

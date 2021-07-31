@@ -1,4 +1,4 @@
-package problem135
+package sol
 
 /*
 	LeetCode Problem 135: Candy

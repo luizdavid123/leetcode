@@ -1,4 +1,4 @@
-package problem28
+package sol
 
 /*
 	LeetCode Problem 28: Implement strStr()

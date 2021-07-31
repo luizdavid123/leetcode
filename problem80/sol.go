@@ -1,4 +1,4 @@
-package problem80
+package sol
 
 /*
 	LeetCode Problem 80: Remove Duplicates from Sorted Array II

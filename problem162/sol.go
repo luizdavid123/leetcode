@@ -1,4 +1,4 @@
-package problem162
+package sol
 
 /*
 	LeetCode Problem 162: Find Peak Element

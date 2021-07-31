@@ -1,4 +1,4 @@
-package problem167
+package sol
 
 /*
 	LeetCode Problem 167: Two Sum II - Input array is sorted

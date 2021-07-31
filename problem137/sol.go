@@ -1,4 +1,4 @@
-package problem137
+package sol
 
 /*
 	LeetCode Problem 137: Single Number II

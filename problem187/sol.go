@@ -1,4 +1,4 @@
-package problem187
+package sol
 
 /*
 	LeetCode Problem 187: Repeated DNA Sequences

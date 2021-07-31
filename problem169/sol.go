@@ -1,4 +1,4 @@
-package problem169
+package sol
 
 /*
 	LeetCode Problem 169: Majority Element

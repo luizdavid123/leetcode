@@ -1,4 +1,4 @@
-package problem77
+package sol
 
 /*
 	LeetCode Problem 81: Combinations

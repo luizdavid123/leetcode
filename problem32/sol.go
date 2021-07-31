@@ -1,4 +1,4 @@
-package problem32
+package sol
 
 /*
 	LeetCode Problem 32: Longest Valid Parentheses

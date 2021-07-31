@@ -1,4 +1,4 @@
-package problem122
+package sol
 
 /*
 	LeetCode Problem 122: Best Time to Buy and Sell Stock II

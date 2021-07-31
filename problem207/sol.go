@@ -1,4 +1,4 @@
-package problem207
+package sol
 
 /*
 	LeetCode Problem 207: Course Schedule

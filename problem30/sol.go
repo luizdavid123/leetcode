@@ -1,4 +1,4 @@
-package problem30
+package sol
 
 /*
 	LeetCode Problem 30: Substring with Concatenation of All Words

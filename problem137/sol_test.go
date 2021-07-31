@@ -1,4 +1,4 @@
-package problem137
+package sol
 
 import (
 	"leetcode/misc"

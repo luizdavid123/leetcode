@@ -1,4 +1,4 @@
-package problem39
+package sol
 
 import (
 	"fmt"

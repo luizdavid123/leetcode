@@ -1,4 +1,4 @@
-package problem47
+package sol
 
 /*
 	LeetCode Problem 47: Permutations II

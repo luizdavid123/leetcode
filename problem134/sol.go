@@ -1,4 +1,4 @@
-package problem134
+package sol
 
 /*
 	LeetCode Problem 134: Gas Station

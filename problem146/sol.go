@@ -1,4 +1,4 @@
-package problem146
+package sol
 
 import "container/list"
 

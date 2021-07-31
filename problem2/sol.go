@@ -1,4 +1,4 @@
-package problem2
+package sol
 
 import (
 	"strconv"

@@ -1,4 +1,4 @@
-package problem12
+package sol
 
 /*
 	LeetCode Problem 12: Integer to Roman

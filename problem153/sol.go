@@ -1,4 +1,4 @@
-package problem153
+package sol
 
 /*
 	LeetCode Problem 153: Find Minimum in Rotated Sorted Array

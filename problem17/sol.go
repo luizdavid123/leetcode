@@ -1,4 +1,4 @@
-package problem17
+package sol
 
 /*
 	LeetCode Problem 17:  Letter Combinations of a Phone Number

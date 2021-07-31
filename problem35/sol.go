@@ -1,4 +1,4 @@
-package problem35
+package sol
 
 /*
 	LeetCode Problem 35: Search Insert Position
