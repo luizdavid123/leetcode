@@ -13,6 +13,7 @@ func TestShortestPalindrome(t *testing.T) {
 		"case 01": {"aacecaaa", "aaacecaaa"},
 		"case 02": {"abcd", "dcbabcd"},
 		"case 03": {"ab", "bab"},
+		"case 04": {"bba", "abba"},
 	}
 
 	for name, test := range tests {

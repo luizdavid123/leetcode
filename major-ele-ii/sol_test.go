@@ -8,10 +8,13 @@ import (
 func TestFindMajorEle(t *testing.T) {
 	tests := map[string]struct {
 		nums []int
-		ans  int
+		ans  []int
 	}{
-		"case 01": {[]int{3, 2, 3}, 3},
-		"case 02": {[]int{2, 2, 1, 1, 1, 2, 2}, 2},
+		"case 01": {[]int{3, 2, 3}, []int{3}},
+		"case 02": {[]int{1}, []int{1}},
+		"case 03": {[]int{1, 2}, []int{1, 2}},
+		"case 04": {[]int{2, 2}, []int{2}},
+		"case 05": {[]int{2, 2, 3, 1}, []int{2}},
 	}
 
 	for name, test := range tests {
